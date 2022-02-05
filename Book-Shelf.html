@@ -1,0 +1,352 @@
+<html>
+
+
+<head>
+
+    <title>Book Shelf</title>
+    <!--the whole idea is to put icon under the title-->
+    <link href="outline_library_books_black_24dp.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js ">
+    </script>
+    <link rel="stylesheet " href="CSSfile.css ">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css " rel="stylesheet " integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We " crossorigin="anonymous ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        body {
+            background-color: teal;
+        }
+        
+        .btn {
+            background-color: #018989 !important;
+            border-radius: 10cm;
+        }
+        
+        .bg-primary {
+            background-color: #f5f5f5 !important;
+        }
+        
+        .navbar-dark {
+            border: grey;
+        }
+        
+        .btn-outline-drak {
+            border-radius: 10cm;
+        }
+        
+        .form-control {
+            border-radius: 10cm;
+        }
+        
+        .input-group {
+            width: 80%
+        }
+        
+        .card-text {
+            text-align: center;
+        }
+        
+        .img-fluid-1 {
+            border-radius: 2cm;
+        }
+        
+        .b {
+            align-content: center;
+        }
+        
+        #map {
+            height: 50%;
+            width: 50%;
+            position: relative;
+            left: 570px;
+            bottom: 10px;
+            top: -130px;
+            border-radius: 100px;
+        }
+        
+        .text-co {
+            height: 300px;
+            position: relative;
+            left: 100px;
+            bottom: -160px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj " crossorigin="anonymous ">
+    </script>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-2 fixed-top ">
+        <div class="container ">
+            <a class="navbar-brand " href="# ">
+                <u><span class="textoo ">Book Shelf</span></u></a>
+            <button class=" navbar-toggler " type="button " data-bs-toggle="collapse " data-bs-target="#navmenu ">
+                <span class="navbar-toggler-icon "></span>
+                </button>
+            <div class="collapse navbar-collapse " id="navmenu ">
+                <!--ms takes the shit to the left -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item ">
+                        <!--active here is o show that home will apear as the currently opened page-->
+                        <a class="nav-link active " aria-current="page " href="# ">Home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <!--adding the link as the id used for the section makes a smooth move to the wanted section when click he navbar -->
+                        <a class="nav-link " href="#Products ">Library</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#mentors ">Connect Us</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#Help ">Help</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+
+
+    .big:hover .child { background-color: #008080; animation: alternate-reverse 1s; } @keyframes alternate-reverse { 100% { transform: rotate(100%); } 0% { transform: translateY(100%); } } .child { background-color: pink; } .big { background-color: whitesmoke;
+    }
+
+
+    <section class="bg-dark text-light p-3 text-center "></section>
+    <section class="bg-dark text-light p-4 text-center ">
+        <div class="container ">
+
+            <div class="d-sm-flex ">
+                <div>
+                    <h1>Book
+                        <span class="texto "> shelf</span></h1>
+                    <h3> The latest new release books, bestselling authors, children 's books, ebooks and more... </h3>
+
+                    <button class="btn btn-lg my-1 " data-bs-toggle="modal " data-bs-target="#money "> BUY NOW</button>
+                    <!--<button type="button " class="btn-primary btn-primary active ">Success</button> -->
+
+                </div>
+                <div class="g-col-4 " id="mo ">
+                    <!--d is display none means pic desapear d-block mean the pic gonna desapear when the screens gets small-->
+                    <img class="img-fluid d-none d-sm-block " src="undraw_book_lover_mkck.png " alt=" " /></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary text-dark p-5 ">
+        <div class="container ">
+            <div class="d-md-flex lg justify-content-between align-items-center ">
+                <h5>Find your book here!</h5>
+                <div class="input-group ms-2 ">
+                    <input type="text " class="form-control " placeholder="search for a book " aria-label="Recipient 's username " aria-describedby="button-addon2 ">
+                    <button class="btn btn-outline-drak " id="button-addon2 ">
+                        <svg xmlns="http://www.w3.org/2000/svg " height="24px " viewBox="0 0 24 24 " width="24px " fill="#000000 "><path d="M0 0h24v24H0V0z " fill="none "/><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5
+                            3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z "/></svg>
+                        </button>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class=" p-5 ">
+        <div class="container ">
+
+            <div class="row d-sm-flex text-center g-4 ">
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="card " style="width: 18rem;height: 10.5cm; ">
+                        <img src="bestsell.jpg " class="card-img-top " style="width: 18rem;height: 4.5cm; " alt=" ... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Best Seller</h5>
+                            <p class="card-text ">Explore The New York Times Bestseller list to find your next read. Browse a wide variety of bestselling books, including fiction, non-fiction, and more.</p>
+                            <a href="# " class="btn btn-drak ">Check out</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="card " style="width: 18rem;height: 10.5cm; ">
+                        <img src="od.png " style="width: 18rem;height: 4.5cm; " class=" card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Audio Books</h5>
+                            <p class="card-text ">Free audio books and eBooks. Search, browse, listen, read and download over 100000 free audio books.</p>
+                            <a href="# " class="btn btn-drak ">Check out</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-12 ">
+                    <div class="card " style="width: 18rem;height: 10.5cm; ">
+                        <img src="loo.jpg " style="width: 18rem;height: 4.5cm; " class=" card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title ">Novels</h5>
+                            <p class="card-text ">Explore new novels and read intresting content your favorite novels are one click away .</p>
+                            <a href="# " class="btn btn-drak ">Check it out</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Products " class=" bg-white p-5 ">
+        <div class="container ">
+            <div class="d-sm-flex ">
+                <div class="text-center mt-5 ">
+                    <h1>
+                        <span class="texto ">  A Huge library right here</span></h1>
+                    <h3> your best source to buy cheap book online, make online book purchase, making us the best book websi</h3>
+
+
+                </div>
+                <!--<div class="g-col-4 " id="mo ">
+                -d is display none means pic desapear d-block mean the pic gonna desapear when the screens gets small-->
+                <img class="img-fluid-1 " style="width: 19cm;height: 11cm; align-content: initial; " src="hool.lnk " alt=" " /></div>
+        </div>
+
+        </div>
+    </section>
+    <section id=" " class=" bg-dark text-light p-5 ">
+        <div class="container ">
+            <div class="d-sm-flex adjust-between ">
+                <div>
+                    <!--<div class="g-col-4 " id="mo ">
+                -d is display none means pic desapear d-block mean the pic gonna desapear when the screens gets small-->
+                    <img class="img-fluid d-none d-sm-block " style="width: 19cm;height: 10cm; " src="undraw_road_to_knowledge_m8s0.png " alt=" " />
+                </div>
+                <div class=" align-text text-center ml-2 ">
+                    <h1>
+                        <span class=" texto ms-10 ">your libray right on the browser</span></h1>
+                    <h3> your best source to buy cheap book online, make online book purchase, making us the best book websi</h3>
+
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <section id="Help " class="bg-light p-4 ">
+        <div class="container ">
+            <h2 class="text-center ">Do you need help ?</h2>
+
+            <div class="accordion accordion-flush fxLayoutAlign=e nd mx-5 " id=" accordionFlushExample ">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingOne ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseOne " aria-expanded="false " aria-controls="flush-collapseOne ">
+              I could not enter my credit card number
+            </button>
+                    </h2>
+                    <div id="flush-collapseOne " class="accordion-collapse collapse " aria-labelledby="flush-headingOne " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    </div>
+                </div>
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-headingTwo ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseTwo " aria-expanded="false " aria-controls="flush-collapseTwo ">
+              I did not ecieve my book
+            </button>
+
+                    </h2>
+                    <div id="flush-collapseTwo " class="accordion-collapse collapse " aria-labelledby="flush-headingTwo " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    </div>
+                </div>
+                <div class="accordion-item ">
+                    <h2 class="accordion-header " id="flush-help ">
+                        <button class="accordion-button collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#flush-collapseThree " aria-expanded="false " aria-controls="flush-collapseThree ">
+              wrong address 
+            </button>
+                    </h2>
+                    <div id="flush-collapseThree " class="accordion-collapse collapse " aria-labelledby="flush-help " data-bs-parent="#accordionFlushExample ">
+                        <div class="accordion-body ">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling
+                            up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <section id="mentors " class=" bg-dark p-5 ">
+        <div class="container text-light text-center ">
+
+            <h2>
+                Connect Our mentors
+            </h2>
+            <p></p>
+            <div class="row g-3 ">
+                <div class="col-md-12 col-lg-4 ">
+                    <div class="card bg-light " style="height: 9cm; ">
+                        <div class="card-body text-center ">
+                            <img src="https://randomuser.me/api/portraits/women/3.jpg " class="rounded-circule mb-3 ">
+
+                            <h3 class="card-title text-dark ">first mentor</h3>
+                            <p class="card-text text-dark mb-3 "></p>
+
+                            <div class="elements ">
+                                <a href="# " class="fa fa-facebook text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-twitter text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-pinterest text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-linkedin text-dark mx-1 "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 w-4 col-lg-4 ">
+                    <div class="card bg-light " style="height: 9cm; ">
+                        <div class=" card-body text-center ">
+
+                            <img src="https://randomuser.me/api/portraits/men/4.jpg " class="rounded-circule mb-3 ">
+
+                            <h3 class="card-title text-dark ">second mentor</h3>
+                            <p class="card-text text-dark "></p>
+                            <div class="elements  ">
+                                <a href="# " class="fa fa-facebook text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-twitter text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-pinterest text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-linkedin text-dark mx-1 "></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 w-4 col-lg-4 ">
+                    <div class="card bg-light " style=" height: 9cm; ">
+                        <div class=" card-body text-center ">
+                            <img src="https://randomuser.me/api/portraits/women/11.jpg " class="rounded-circule mb-3 ">
+                            <h3 class="card-title text-dark ">third mentor
+                            </h3>
+                            <p class="card-text text-dark mb-3 "></p>
+                            <div class="elements  ">
+                                <a href="# " class="fa fa-facebook text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-twitter text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-pinterest text-dark mx-1 "></a>
+                                <a href="# " class="fa fa-linkedin text-dark mx-1 "></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+
+
+    <footer class=" bg-dark text-light text-center position-relative ">
+        <div class="container ">
+            <p class="lead ">Copyrights &copy; 2021 Book Shelf</p>
+
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

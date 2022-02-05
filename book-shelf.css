@@ -1,0 +1,93 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: teal;
+}
+
+.btn {
+    background-color: #018989 !important;
+    border-radius: 10cm;
+}
+
+.bg-dark-1 {
+    background-color: #007575 !important;
+}
+
+.navbar-dark {
+    border: grey;
+}
+
+.btn-outline-drak {
+    border-radius: 10cm;
+}
+
+.form-control {
+    border-radius: 10cm;
+}
+
+.input-group {
+    width: 80%
+}
+
+.card-text {
+    text-align: center;
+}
+
+.img-fluid-1 {
+    border-radius: 2cm;
+}
+
+.b {
+    align-content: center;
+}
+
+#map {
+    height: 50%;
+    width: 50%;
+    position: relative;
+    left: 570px;
+    bottom: 10px;
+    top: -130px;
+    border-radius: 100px;
+}
+
+.text-co {
+    height: 300px;
+    position: relative;
+    left: 100px;
+    bottom: -160px;
+}
+
+img {
+    margin-right: 0.00004px;
+    border-bottom-right-radius: 13cm;
+    border-radius: 20cm;
+}
+
+.texto {
+    color: rgb(63, 180, 180);
+}
+
+.textoo {
+    color: #f5f5f5;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+button {
+    color: darkcyan;
+    background-color: darkcyan;
+}
+
+u {
+    color: rgb(63, 180, 180);
+}
+
+h5 {
+    font-style: italic;
+    text-align: center;
+}
